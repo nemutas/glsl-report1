@@ -9,7 +9,8 @@ vec3 hsv2rgb(vec3 c) {
 }
 
 void main() {
-  if (0.5 < distance(gl_PointCoord.xy, vec2(0.5))) discard;
+  if (0.5 < distance(gl_PointCoord.xy, vec2(0.5)))
+    discard;
 
   vec3 chromaticAberration = hsv2rgb(vec3(vY, 1, 1));
 
